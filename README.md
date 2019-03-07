@@ -17,13 +17,13 @@ opencv 4.0.1
 ## 3. Demo
 ### Input Image and Base Background Image
 <p align="center">
-  <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/input.jpg">
-  <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/base_background.jpg">
+  <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/input.jpg" alt="Input"> \
+  <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/base_background.jpg" alt="Background">
 </p>
 
 ### Output Images(Background Subtraction & Randomization)
 <p align="center">
-  <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/output_subtracted.jpg">
-  <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/output_random.jpg">
+  <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/output_subtracted.jpg" alt="Background Subtraction"> \
+  <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/output_random.jpg" alt="Background Randomization">
 </p>
 
