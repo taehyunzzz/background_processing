@@ -14,24 +14,18 @@ opencv 4.0.1
 (5) Set process mode (Subtraction/Randomization)
 (6) Run the code!
 
-## 3.Demo
-### Input Image
+## 3. Demo
+### Input Image and Base Background Image
 <p align="center">
   <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/input.jpg">
-</p>
-
-### Base Background Image
-<p align="center">
+</p> <p align="center">
   <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/base_background.jpg">
 </p>
 
-### Output(Background Subtraction)
+### Output Images(Background Subtraction & Randomization)
 <p align="center">
   <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/output_subtracted.jpg">
-</p>
-
-### Output(Background Randomization)
-<p align="center">
+</p> <p align="center">
   <img width="300" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/output_random.jpg">
 </p>
 
