@@ -1,5 +1,5 @@
 # Background Subtraction with OpenCV MOG2
-Remove background from your image using OpenCV MOG2. You can also replace your background with a whole new image. Randomizing background of an object will enhance learning for one-shot object detection models such as YOLO. This code allows processing of multiple images at once. Original source code acquired from [opencv tutorial](https://docs.opencv.org/master/d1/dc5/tutorial_background_subtraction.html).
+Remove background from your image using OpenCV MOG2. You can also replace your background with a whole new image. Randomizing background of an object will enhance learning for one-shot object detection models such as YOLO. This code allows you to process multiple images at once. Original source code acquired from [opencv tutorial](https://docs.opencv.org/master/d1/dc5/tutorial_background_subtraction.html).
 
 ## 1. Requirements
 ```
