@@ -61,67 +61,11 @@ void help()
 int main(int argc, char* argv[])
 
 {
-/*
 	//////////////////////////////////////////////////////
-	//  PART 1. GENERATE BACKGROUND FROM NON-BASE IMAGES
-
-	// Set Base and Source. Result will be Source (cropped image) + Base
-
-	//Mat bg_base = imread("D:/32_TunaCan_raw/TunaCan_1_1829.jpg");
-	//Mat bg_source = imread("D:/32_TunaCan_raw/TunaCan_1_2586.jpg");
-
-
-	//// Crop
-
-	int width = bg_source.cols;
-	int height = bg_source.rows;
-	Rect bg_source_roi = Rect(Point(0, height*0.6), Point(width / 5, height - 1));
-
-
-	//// Show middle result
-
-	imshow("bg_base", bg_base);
-	imshow("bg_source", bg_source);
-
-	cout << "rect : " << bg_source_roi << endl;
-	Mat bg_source_crop = bg_source(bg_source_roi);
-
-	Mat bg;
-	bg_base.copyTo(bg);
-	bg_source_crop.copyTo(bg(bg_source_roi));
-
-	imshow("bg_base", bg_base);
-	imshow("bg_source", bg_source);
-	imshow("bg_source_crop", bg_source_crop);
-	imshow("result", bg);
-	imwrite("D:\\background_sub\\backgrounds\\Vita500_add2_4_bg.jpg", bg);
-
-	waitKey();
-
-	//////////////////////////////////////////////////////
-*/
-	
-	//////////////////////////////////////////////////////
-	//  PART 2. SUBTRACT BACKGROUND USING BASE BACKGROUND INFO
-
-	// Create GUI windows
-	//namedWindow("Frame");
-	//namedWindow("bgImg");
-	//namedWindow("FG Mask MOG 2");
-	//namedWindow("frameBG");
+	//  SUBTRACT BACKGROUND USING BASE BACKGROUND INFO
 
 	// Create Background Subtractor Instance
 	pMOG2 = createBackgroundSubtractorMOG2(1, 16, true); //MOG2 approach
-	
-	//// SAMPLE : Read Background and target image
-	//Mat bg = imread("D:\\background_sub\\backgrounds\\Vita500_0_bg.jpg");
-	//Mat target = imread("D:\\background_sub\\Vita500_0_\\Vita500_0_32.jpg");
-	//pMOG2->apply(bg, target, 0);
-
-	//// SAMPLE : Show Result
-	//imshow("bg", bg);
-	//imshow("target", target);
-	//keyboard = waitKey(0);
 	
 	// FIX filename
 	string filename = "soohong";
@@ -132,7 +76,7 @@ int main(int argc, char* argv[])
 	// hyunsung 846
 	// soohong 708
 
-	// Set paths 
+	// FIX paths 
 	string random_bg_list_path = "C:/Users/Taehyun Kim/Desktop/Project/3.Background_Subtraction/random_pics.txt";
 
 	string img_list_path = "C:/Users/Taehyun Kim/Desktop/Project/1.Split_Video/";
@@ -143,6 +87,7 @@ int main(int argc, char* argv[])
 	base_bg_dir.append(filename);
 	base_bg_dir.append("/");
 	base_bg_dir.append(filename);
+
 	// FIX base background image index
 	base_bg_dir.append("_708.jpg");
 
