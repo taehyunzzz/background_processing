@@ -7,12 +7,12 @@ opencv 4.0.1
 ```
 
 ## 2. Usage
-(1) Fix paths to your images. 
-(2) Create a .txt list of images to process and set path to it.
-(3) Set path to your base background image.
-(4) Set names and paths for your results. 
-(5) Set process mode (Subtraction/Randomization)
-(6) Run the code!
+(1) Fix paths to your images.<br/> 
+(2) Create a .txt list of images to process and set path to it.<br/>
+(3) Set path to your base background image.<br/>
+(4) Set names and paths for your results.<br/>
+(5) Set process mode (Subtraction/Randomization)<br/>
+(6) Run the code!<br/>
 
 ## 3. Demo
 ### Input Image and Base Background Image
