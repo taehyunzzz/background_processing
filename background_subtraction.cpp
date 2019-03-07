@@ -1,4 +1,3 @@
-#pragma once
 //opencv
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/imgproc.hpp"
@@ -16,9 +15,6 @@
 #include <string>
 #include <regex>
 #include <fstream>
-
-//Windows
-#include <Windows.h>
 
 using namespace cv;
 using namespace std;
