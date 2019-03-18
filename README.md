@@ -27,3 +27,7 @@ opencv 4.0.1
   <img width="350" src="https://github.com/taehyunzzz/background_processing/blob/master/samples/output_random.jpg" alt="Background Randomization">
 </p>
 
+## 4. Compilation
+```
+ g++ background_subtraction.cpp -o bs $(pkg-config --libs --cflags opencv)
+```
