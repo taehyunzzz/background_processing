@@ -186,7 +186,6 @@ void processList(string img_list_path, string random_bg_list_path, string base_b
 			cout << "checkpoint : " << cnt << " complete ..." << endl;
 		}
 	}
-
 }
 
 // make background black
@@ -288,7 +287,7 @@ void processList2(string img_list_path, string base_bg_dir, string write_path){
 
 }
 
-// randomize background with black background
+// Randomize background with black background. Set number of random images to use per image
 void processList3(string img_list_path, string random_bg_list_path, string write_path) {
 
 	if (debug) {
@@ -303,6 +302,7 @@ void processList3(string img_list_path, string random_bg_list_path, string write
 	int img_width, img_height;
 	int cnt = 0;
 	int bg_cnt;
+	int random_num = 50;
 
 	while (getline(img_list, img_path)) {
 
@@ -336,9 +336,9 @@ void processList3(string img_list_path, string random_bg_list_path, string write
 		
 		if(cnt%100 == 0) cout << cnt << endl;
 		// iterate over random images
-		while (getline(random_bg_list, random_bg_path) && bg_cnt < 50) {
+		while (getline(random_bg_list, random_bg_path) && bg_cnt < random_num) {
 
-			if(cnt%100 == 0 && bg_cnt % 10 == 9) cout << "***" << bg_cnt+1 << "/50" << endl;
+			if(cnt%100 == 0 && bg_cnt % 10 == 9) cout << "***" << bg_cnt+1 << "/" << random_num << endl;
 			// Black image of size 640x480
 			Mat black_bg(480, 640, CV_8UC3, Scalar(0, 0, 0));
 			Mat dummy(480, 640, CV_8UC3, Scalar(0, 0, 0));
@@ -396,7 +396,6 @@ void processList3(string img_list_path, string random_bg_list_path, string write
 			bg_cnt++;
 		}
 	}
-
 }
 
 
